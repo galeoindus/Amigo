@@ -7,11 +7,15 @@ Checks included in scripts/validate_package.py:
 - Root metadata and Python syntax
 - Relative Markdown links scanned (schematic examples may be reported as warnings)
 
-Additional smoke tests in this build:
+Additional smoke tests in this build (1.2.0):
+- New analytics helpers compile and run on synthetic input: ordered funnel, contribution analysis, two-proportion comparison (Newcombe + Agresti–Caffo + pooled z).
+- Statistics helper emits small-cell / small-sample warnings as intended.
+
+Additional smoke tests in the 1.1.0 build:
 - Python files compile successfully
 - Data profiler tested against absent fields, nulls, numeric strings and ISO timestamps
 - Descriptive stats helper tested against missing/invalid values and a potential outlier
 - Schema crawl planner emits parseable JSON for the Mixpanel example
 - ZIP integrity and manifest count verified
 
-Limitations: no live connector/API, GitHub repository, Metabase instance, Figma file or PowerPoint renderer was accessed. Package QA is not proof of end-to-end integration.
+Limitations: no live connector/API, GitHub repository, Metabase instance, Figma file or PowerPoint renderer was accessed. The agent-builder modules describe clone setup and were not exercised against a live agent-creation surface. Package QA is not proof of end-to-end integration.

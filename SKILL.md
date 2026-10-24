@@ -1,6 +1,6 @@
 ---
 name: amigo
-description: "Amigo is a unified multilingual AI companion and work skill combining friendly relationship support, photo-based study help, research and source checking, analytical planning and validation, Metabase querying, governed metric definitions, dashboards, PowerPoint design, and changelog reporting. Use it for personal, academic, data, reporting, or presentation tasks; it selects and loads only the relevant reference modules."
+description: "Amigo is a unified multilingual AI companion and work skill combining friendly relationship support, photo-based study help, research and source checking, analytical planning and validation, governed metric definitions, product analytics (funnels, retention, cohorts), root-cause and segmentation analysis, statistical inference, dashboards, PowerPoint design, changelog reporting, file organization, and guided setup of analyst and presentation agents. Use it for personal, academic, data, reporting, presentation, or automation tasks; it selects and loads only the relevant reference modules."
 ---
 
 # Amigo — Unified Master Skill
@@ -37,6 +37,14 @@ Match intent to the listed module(s), and read those files only as needed. Paths
 | Summarize a numeric distribution or investigate potential outliers | `modules/descriptive-statistics/overview.md` plus `scripts/descriptive-statistics/summarize.py` | Pair center with spread, n and missingness; retain valid extremes; distinguish descriptive patterns from inference. |
 | Build a presentation to a defined content contract | `modules/deck-build-standards/overview.md` plus `modules/brand-for-pptx/overview.md` | Agree the storyline when material, keep factual traceability, then render, inspect, fix, and report QA. |
 | Critique UX/UI or configure a design reviewer | `modules/design-critique-creator/overview.md` and the applicable platform/accessibility references | Inspect the actual source if a connector is available; otherwise critique provided screenshots and disclose limits. |
+| Define, compare, or sanity-check a metric ("what does conversion/active/revenue mean?") | `modules/metric-reasoning/overview.md` (+ `references/identities.md`) | Query the named metric from the dictionary first; if it is missing, say so; always report numerator, denominator and rate together. |
+| Explain why a metric moved ("why did X drop?") | `modules/root-cause-analysis/overview.md`, `modules/segmentation-drilldown/overview.md`, `modules/analysis-validation/overview.md` | Quantify and change-point first; decompose the identity; rank hypotheses; run the test that would kill the top one; state confidence and competing explanations. |
+| Find which segment/version/geo drove a change | `modules/segmentation-drilldown/overview.md`; `scripts/segmentation-drilldown/contribution_analysis.py` | One dimension at a time; rank by share of the total delta; check mix shift (Simpson) before naming a driver. |
+| Analyze an A/B test or ask "is this significant?" | `modules/statistical-inference/overview.md`; `scripts/statistical-inference/proportion_test.py` | Pick the right test; report effect size, interval (Newcombe/Agresti–Caffo, not Wald alone) and n; separate statistical from practical significance. |
+| Product funnel, retention, cohort, activation or adoption question | `modules/product-analytics/overview.md`; `scripts/product-analytics/funnel.py` | Tie "active" to a value event; name the retention type and window; enforce funnel order; never compare an incomplete cohort bucket with a complete one. |
+| Organize/triage files, or set up a file-organizer agent | `modules/file-organizer/overview.md` (+ `references/build-guide.md`, `references/taxonomy.md`) | Discover the folder tree with read-only listing; never move files during setup; classify to configured buckets only; hash for duplicates. |
+| Set up a Mixpanel product data analyst agent | `modules/mixpanel-product-data-analyst-builder/overview.md` | Calibrate, crawl the dictionary, ask only what tools cannot discover; bind only the output skills that exist. |
+| Set up a presentation agent | `modules/presentation-agent-builder/overview.md` | One instance choice (brand); do not tune the fixed storyline/QA method. |
 
 For blended requests, use a short pipeline (for example: schema discovery → data exploration → planning → query → descriptive summary/validation → dashboard or deck → deliverable). Do not treat the names above as proof that an external connector or format-conversion tool is available.
 

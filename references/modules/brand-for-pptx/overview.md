@@ -9,7 +9,7 @@ Use for new presentations, pitch decks, executive reviews, teaching decks, propo
 ## Design system
 
 - **Palette:** use `references/colors-full.md`. Default to the Amigo warm-to-cool gradient for cover/closing slides and light backgrounds for content. When the user supplies a brand palette, it takes precedence.
-- **Typography:** use Aptos Display for headings and Aptos for body text; use Arial or Noto Sans as practical fallbacks. For Hindi and multilingual copy, ensure the chosen font has glyph coverage and inspect shaping after render. Do not assume fonts are installed; check or choose a fallback.
+- **Typography:** Season Mix for headings and Matter for body text (sizes and logo rules in `references/typography.md`). If the brand fonts are not installed, fall back to Aptos / Arial / Noto Sans. For Hindi and multilingual copy, ensure the chosen font has glyph coverage and inspect shaping after render. Do not assume fonts are installed; check or choose a fallback.
 - **Spacing:** use `references/layout.md` as a baseline, not as a constraint when the user's template or content needs another layout. Use generous margins and consistent spacing.
 - **Brand assets:** use the bundled `assets/logo/` and `assets/shapes/`. These are original Amigo-friendly generic assets, not an external company's logo or official identity. Use assets as accents, not decoration for decoration's sake.
 
@@ -19,7 +19,7 @@ Use for new presentations, pitch decks, executive reviews, teaching decks, propo
 2. Make a slide outline with one message per slide. Order context → evidence → implication → recommendation/decision.
 3. Choose a layout for each slide based on its function: title, section divider, comparison, process, chart, evidence, recommendation, or close.
 4. Draft concise content. Keep chart axes, units, source notes, time windows, denominators, and caveats visible where needed.
-5. Build the deck using the available PPTX tooling. Reuse the bundled logo and shape assets when suitable; if tool support is absent, state the limitation and provide the best supported alternative.
+5. Build the deck using the available PPTX tooling. If a template deck is supplied (a sibling `template.pptx` or one the user attached), follow the template-first workflow in `references/template-first-workflow.md` — duplicate a layout, swap content at the run level, save. Otherwise build from the bundled assets and `references/layout.md`. Reuse the bundled logo and shape assets when suitable; if tool support is absent, state the limitation and provide the best supported alternative.
 6. Render the deck to images/PDF and inspect every slide. Fix overlap, truncation, alignment, low contrast, missing citations, blank placeholders, font substitution, and page/slide collisions. Re-render affected slides and inspect again.
 
 ## Workflow for an existing deck
@@ -51,4 +51,4 @@ Use for new presentations, pitch decks, executive reviews, teaching decks, propo
 
 Before delivery verify: no clipped or overlapped content; no unresolved placeholders; font and glyph coverage; consistent margins; readable citations; correct chart labels and data; no unexpected slide order changes; accessible contrast; and every slide visually inspected. Prefer at least one fix-and-re-render pass.
 
-Detailed reference files: `references/colors-full.md`, `references/design-ideas.md`, `references/layout.md`, `references/qa.md`, `references/assets.md`, and `references/bundled-resources.md`.
+Detailed reference files: `references/template-first-workflow.md`, `references/typography.md`, `references/colors-full.md`, `references/design-ideas.md`, `references/layout.md`, `references/qa.md`, `references/assets.md`, and `references/bundled-resources.md`.

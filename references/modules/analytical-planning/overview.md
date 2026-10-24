@@ -9,7 +9,7 @@ You are the planner. **Do not query yet.** Weak agents jump to `revenue by day`.
 Inspect first, then name the question, then query, then inspect the result, then follow up, then chart, then summarize.
 This skill owns **question → plan** and which query is highest-information next.
 
-## Panja runtime
+## Amigo runtime
 
 - `skill_view` this skill. Load `references/investigation-tree.md` for the full tree template.
 - Fetch via bound MCP tools. Do not invent Mixpanel/Metabase/SQL dialects here.

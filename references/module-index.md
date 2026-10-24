@@ -19,6 +19,16 @@ Amigo is one installable master skill. Exactly one `SKILL.md` is the active mani
 | `deck-build-standards.zip` | `modules/deck-build-standards/overview.md` | Content contract, chart/source requirements, render and accessibility QA |
 | `descriptive-statistics.zip` | `modules/descriptive-statistics/overview.md`; `scripts/descriptive-statistics/summarize.py` | Distributions, missingness, robust spread and candidate outlier flags |
 | `design-critique-creator.zip` | `modules/design-critique-creator/overview.md` | Tool-aware design-review setup, screenshot fallback, prioritized UX/accessibility critique |
+| `metric-reasoning.zip` | `modules/metric-reasoning/overview.md` + `references/identities.md` | Governed metric semantics: metric contract, identities, rates vs counts, mix and denominator effects |
+| `root-cause-analysis.zip` | `modules/root-cause-analysis/overview.md` + `references/evidence-language.md` | Hypothesis generation, change-point alignment, discriminating tests, confidence language |
+| `segmentation-drilldown.zip` | `modules/segmentation-drilldown/overview.md`; `scripts/segmentation-drilldown/contribution_analysis.py` | Contribution/Pareto drilldown, mix-shift (Simpson) detection, sub-measure decomposition |
+| `statistical-inference.zip` | `modules/statistical-inference/overview.md`; `scripts/statistical-inference/proportion_test.py` | Test selection, Newcombe/Agresti–Caffo intervals, effect size, experiment validity |
+| `product-analytics.zip` | `modules/product-analytics/overview.md`; `scripts/product-analytics/funnel.py` | Value-based active definitions, funnels, retention/cohorts, diagnostic order, AI-product metrics |
+| `pptx-master.zip` | `modules/brand-for-pptx/overview.md` + `references/template-first-workflow.md` and `references/typography.md` | Template-first PPTX create/edit/QA workflow, hard rules, font and logo spec (merged into the presentation module) |
+| `file-organizer-builder.zip` | `modules/file-organizer/references/build-guide.md` | Setup-only build interview that writes the clone's taxonomy config; never moves files |
+| `file-triage-taxonomy.zip` | `modules/file-organizer/overview.md` + `references/taxonomy.md` | File classification, naming convention, duplicate detection and output contract |
+| `mixpanel-product-data-analyst-builder.zip` | `modules/mixpanel-product-data-analyst-builder/overview.md` | Build interview for a Mixpanel product data analyst clone; scope, bind, crawl, probe |
+| `presentation-agent-builder.zip` | `modules/presentation-agent-builder/overview.md` | Build interview for a presentation agent; one brand choice, method stays fixed |
 
 ## Integration and safety notes
 
@@ -27,3 +37,5 @@ Amigo is one installable master skill. Exactly one `SKILL.md` is the active mani
 - Any vendor tool sequence is an example until validated against the live tool schema, product version, permission scope, and pagination behavior.
 - The master guide preserves user-provided brands and templates; Amigo colors/logos apply only when appropriate.
 - Every metric definition must distinguish `verified`, `inferred`, and `placeholder`. A successful query does not by itself prove the metric is in scope.
+- The two agent-builder modules (`file-organizer`, `mixpanel-product-data-analyst-builder`, `presentation-agent-builder`) describe clone setup and reference platform builder mechanics; they only apply when the host provides those tools, and their `clarify`/`agent_admin` steps degrade to plain questions otherwise.
+- `pptx-master` is not a separate manifest: its template-first workflow, hard rules and font spec were merged into `brand-for-pptx` so the package keeps a single presentation capability and one active manifest.

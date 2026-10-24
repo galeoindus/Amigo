@@ -6,7 +6,7 @@
 
 Preview results, profile counts and nulls — schema alone is not enough. Evidence before cause. This skill is the last gate.
 
-## Panja runtime
+## Amigo runtime
 
 Run this **before** the user-facing answer. Load `references/checklist.md`.
 
