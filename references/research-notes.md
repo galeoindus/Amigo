@@ -30,7 +30,16 @@
 - **Microsoft PowerPoint accessibility guidance:** https://support.microsoft.com/en-us/accessibility/powerpoint/make-your-powerpoint-presentations-accessible-to-people-with-disabilities — recommends meaningful slide titles, logical reading order, alt text, adequate contrast and accessibility checks.
 - **Apple Human Interface Guidelines — Accessibility:** https://developer.apple.com/design/human-interface-guidelines/accessibility — used as a platform reference only for Apple-platform reviews, not as universal law for every interface.
 - **Apple HIG design principles and WWDC "Writing for interfaces":** https://developer.apple.com/design/human-interface-guidelines and .../design-principles — Clarity/Deference/Depth and the PACE copy framework; distilled into the ui-design-critique module. Also Rene Wang, "Wording in Interfaces": https://rene.wang/essay/wording-in-interfaces.
+- **Veracode GenAI Code Security Report (2025 and 2026):** https://www.veracode.com/wp-content/uploads/2025_GenAI_Code_Security_Report_Final.pdf and https://view.ceros.com/veracode/genai-code-security-report2026 — about 44-45% of AI code-generation tasks introduce a detectable OWASP/CWE vulnerability; the rate has barely moved across model generations. Used to state the benchmark figure precisely.
+- **"Broken by Default" (arXiv, 2026) and Schreiber & Tippe (arXiv 2510.26103, 2025):** https://arxiv.org/abs/2604.05292 and https://arxiv.org/abs/2510.26103 — explicit security instructions cut the vulnerability rate by only ~4 points; large-scale analysis of public GitHub repos found ~27-30% of AI-attributed snippets carry a weakness. Used to separate benchmark from real-world rates.
+- **JetBrains developer survey (2026), via roundups:** https://cyborb.ai/blog/best-ai-coding-agents-2026 — current adoption (Claude Code, Copilot, Codex, Cursor) and the 2026 tool landscape (Antigravity replaced Gemini CLI). Used to sanity-check the tool table.
 - **OWASP GenAI Security Project, LLM Top 10 2026:** https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/ — used to strengthen awareness of prompt-injection and unsafe agent/tool behavior.
+
+## Changes applied in revision 1.4.0
+
+1. Merged the ai-coding pack and its bundled universal-full-stack-coding-agent companion.
+2. Fixed the nested second manifest (converted to a module), the over-long frontmatter description, and the stale `bundled/` cross-links.
+3. Refined the AI-code security statistic to distinguish the benchmark rate from the real-repository rate, and added the current tool landscape.
 
 ## Changes applied in revision 1.3.0
 

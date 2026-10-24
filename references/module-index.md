@@ -33,6 +33,8 @@ Amigo is one installable master skill. Exactly one `SKILL.md` is the active mani
 | `time-series-analysis.zip` | `modules/time-series-analysis/overview.md`; `scripts/time-series-analysis/baseline.py` | Baseline selection, WoW and weekday means, anomaly flags, change points |
 | `ui-design-critique.zip` | `modules/ui-design-critique/overview.md` + `references/apple-design.md` and `references/apple-copywriting.md` | Apple-HIG and UX-writing critique of UI screenshots; short by default, depth opt-in |
 | `skill-creator.zip` | `modules/skill-creator/overview.md` + `references/best-practices.md` and `references/schemas.md`; `scripts/skill-creator/` | Author, evaluate and optimize skills; skill frontmatter validation helper |
+| `ai-coding.skill` | `modules/ai-coding/overview.md` + `references/01-10` | AI coding playbook: landscape, prompting/context, agentic workflows, review, security, building features, evaluation, learning, plus Hindi guides |
+| `ai-coding.skill` (bundled package) | `modules/universal-full-stack-coding-agent/overview.md` + `references/*`, `templates/AGENTS.md` | Cross-domain delivery playbook (phases 0-7); its nested manifest was converted to a module |
 
 ## Integration and safety notes
 
@@ -43,3 +45,4 @@ Amigo is one installable master skill. Exactly one `SKILL.md` is the active mani
 - Every metric definition must distinguish `verified`, `inferred`, and `placeholder`. A successful query does not by itself prove the metric is in scope.
 - The two agent-builder modules (`file-organizer`, `mixpanel-product-data-analyst-builder`, `presentation-agent-builder`) describe clone setup and reference platform builder mechanics; they only apply when the host provides those tools, and their `clarify`/`agent_admin` steps degrade to plain questions otherwise.
 - `pptx-master` is not a separate manifest: its template-first workflow, hard rules and font spec were merged into `brand-for-pptx` so the package keeps a single presentation capability and one active manifest.
+- The `universal-full-stack-coding-agent` companion shipped inside `ai-coding.skill` as a second `SKILL.md`; it was converted to `overview.md` so the bundle keeps exactly one active manifest. It can still be lifted out as a standalone skill by restoring its manifest.

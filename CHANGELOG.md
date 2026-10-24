@@ -1,5 +1,14 @@
 # Amigo Changelog
 
+## 1.4.0 — 2026-10-25
+
+- Merged the `ai-coding` pack (31 source packs total): an AI-coding playbook with ten references (including two Hindi guides) plus its bundled `universal-full-stack-coding-agent` companion.
+- Fixed a structural defect: the bundled companion shipped as a second `SKILL.md`; it is now `overview.md`, so the package keeps exactly one active manifest.
+- Fixed an over-long frontmatter description (1153 chars, above the 1024 limit) by folding the capability and trigger text into a module blurb and a router row.
+- Repointed every `bundled/...` cross-link to the merged module paths and renamed the companion README to `references/install-notes.md`.
+- Refined the security statistic to separate the controlled-benchmark rate (about 44-45% of tasks produce a vulnerability) from the lower real-repository rate (about 27-30% of snippets), and kept the "secure instructions barely help" finding with its measured size.
+- Added code verification and an AI-assisted-coding standard to the root guide; updated the router, module index and validation notes.
+
 ## 1.3.0 — 2026-10-25
 
 - Merged four more packs (29 source packs total): visualization, time-series-analysis, ui-design-critique, and skill-creator.

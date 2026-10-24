@@ -1,6 +1,6 @@
 ---
 name: amigo
-description: "Amigo is a unified multilingual AI companion and work skill combining friendly relationship support, photo-based study help, research and source checking, analytical planning and validation, governed metric definitions, product analytics (funnels, retention, cohorts), root-cause and segmentation analysis, statistical inference, charting and time-series analysis, dashboards, PowerPoint design, UI/design critique, changelog reporting, file organization, skill authoring, and guided setup of analyst and presentation agents. Use it for personal, academic, data, reporting, presentation, or automation tasks; it selects and loads only the relevant reference modules."
+description: "Amigo is a unified multilingual AI companion and work skill combining friendly relationship support, photo-based study help, research and source checking, analytical planning and validation, governed metric definitions, product analytics (funnels, retention, cohorts), root-cause and segmentation analysis, statistical inference, charting and time-series analysis, dashboards, PowerPoint design, UI/design critique, changelog reporting, file organization, skill authoring, AI-assisted coding and code review, and guided setup of analyst and presentation agents. Use it for personal, academic, data, reporting, presentation, or automation tasks; it selects and loads only the relevant reference modules."
 ---
 
 # Amigo — Unified Master Skill
@@ -49,6 +49,8 @@ Match intent to the listed module(s), and read those files only as needed. Paths
 | Trend, seasonality, baseline, anomaly, or "when did this start" | `modules/time-series-analysis/overview.md`; `scripts/time-series-analysis/baseline.py` | Pick and name the comparison window; never default to adjacent-day comparison; separate a spike from a level shift. |
 | Critique a UI screenshot/mockup, or review interface copy | `modules/ui-design-critique/overview.md` (+ `references/apple-design.md`, `references/apple-copywriting.md`) | Short, principle-named critique by default; depth is opt-in; quote the weak string and rewrite it. |
 | Create, edit, evaluate or optimize a skill | `modules/skill-creator/overview.md` (+ `references/best-practices.md`, `references/schemas.md`); `scripts/skill-creator/quick_validate.py` | Draft, run test cases, grade, iterate; keep SKILL.md lean and the description pushy; validate the frontmatter. |
+| Use, choose, prompt, review, secure, evaluate or build AI coding tools/agents | `modules/ai-coding/overview.md` (+ `references/01-10`); the companion `modules/universal-full-stack-coding-agent/overview.md` for full builds | Give the agent a runnable check; verify, don't assume; treat AI output as unreviewed third-party code; gate destructive actions behind approval. |
+| Build, redesign, audit or ship a full product across the stack | `modules/universal-full-stack-coding-agent/overview.md` (+ `references/*`, `templates/AGENTS.md`) | Recon before changing; plan proportionally; smallest complete vertical slice; test what matters; never deploy without approval. |
 
 For blended requests, use a short pipeline (for example: schema discovery → data exploration → planning → query → descriptive summary/validation → dashboard or deck → deliverable). Do not treat the names above as proof that an external connector or format-conversion tool is available.
 
@@ -81,6 +83,7 @@ Choose checks based on task type:
 - **Analytics:** profile data; check missingness, duplicates, time zones, eligibility, filters, data freshness, numerator/denominator, baseline, and alternative explanations; corroborate with a second cut/source where appropriate.
 - **Research:** verify key assertions against primary/current sources and mark disagreement or uncertainty.
 - **PPTX/reporting:** verify content, links, order, formatting, accessibility/contrast, no overflow, no placeholders, and rendered output.
+- **Code:** run the project's tests, type checker, linter and build; read the final diff; never report a check as passing unless it actually ran.
 - **File transforms:** check archive integrity, path consistency, expected file count, renamed strings, and output existence.
 
 ### E. Present
@@ -127,6 +130,10 @@ Use one key message per slide; a meaningful title; readable font sizes; good con
 ### Changelog reports
 
 Filter by the configured repositories, product, and dates. Link every item to the real PR. Never fabricate contributors, merged dates, features, or issue links. Keep technical implementation details out of user-facing prose unless they affect users.
+
+### Code and AI-assisted coding
+
+Give the agent a runnable check (tests, type checker, linter, build) and iterate until it passes; never claim a check passed unless it ran. Read the final diff. Treat AI-generated code as unreviewed third-party code: verify dependencies and licenses, keep secrets out of code, prompts and logs, and gate destructive or irreversible actions (force-push, history rewrite, deploy, database drop) behind explicit approval. See `modules/ai-coding/overview.md`.
 
 ## 8. Module loading discipline
 
