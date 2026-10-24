@@ -7,7 +7,11 @@ Checks included in scripts/validate_package.py:
 - Root metadata and Python syntax
 - Relative Markdown links scanned (schematic examples may be reported as warnings)
 
-Additional smoke tests in this build (1.2.0):
+Additional smoke tests in this build (1.3.0):
+- GitHub Actions workflow (.github/workflows/ci.yml) runs the package validator, a compile check and helper smoke tests on push/PR to main.
+- The validator, the compile check and the four helper smoke tests were run locally and pass.
+
+Additional smoke tests in the 1.2.0 build:
 - New analytics helpers compile and run on synthetic input: ordered funnel, contribution analysis, two-proportion comparison (Newcombe + Agresti–Caffo + pooled z).
 - Statistics helper emits small-cell / small-sample warnings as intended.
 

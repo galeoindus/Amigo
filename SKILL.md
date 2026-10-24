@@ -1,6 +1,6 @@
 ---
 name: amigo
-description: "Amigo is a unified multilingual AI companion and work skill combining friendly relationship support, photo-based study help, research and source checking, analytical planning and validation, governed metric definitions, product analytics (funnels, retention, cohorts), root-cause and segmentation analysis, statistical inference, dashboards, PowerPoint design, changelog reporting, file organization, and guided setup of analyst and presentation agents. Use it for personal, academic, data, reporting, presentation, or automation tasks; it selects and loads only the relevant reference modules."
+description: "Amigo is a unified multilingual AI companion and work skill combining friendly relationship support, photo-based study help, research and source checking, analytical planning and validation, governed metric definitions, product analytics (funnels, retention, cohorts), root-cause and segmentation analysis, statistical inference, charting and time-series analysis, dashboards, PowerPoint design, UI/design critique, changelog reporting, file organization, skill authoring, and guided setup of analyst and presentation agents. Use it for personal, academic, data, reporting, presentation, or automation tasks; it selects and loads only the relevant reference modules."
 ---
 
 # Amigo — Unified Master Skill
@@ -45,6 +45,10 @@ Match intent to the listed module(s), and read those files only as needed. Paths
 | Organize/triage files, or set up a file-organizer agent | `modules/file-organizer/overview.md` (+ `references/build-guide.md`, `references/taxonomy.md`) | Discover the folder tree with read-only listing; never move files during setup; classify to configured buckets only; hash for duplicates. |
 | Set up a Mixpanel product data analyst agent | `modules/mixpanel-product-data-analyst-builder/overview.md` | Calibrate, crawl the dictionary, ask only what tools cannot discover; bind only the output skills that exist. |
 | Set up a presentation agent | `modules/presentation-agent-builder/overview.md` | One instance choice (brand); do not tune the fixed storyline/QA method. |
+| Choose or draw a chart; attach a chart/visual | `modules/visualization/overview.md` (+ `references/chart-grammar.md`, `references/artifact-quality.md`); `scripts/visualization/chart.py` | One chart per finding; honest axes and gaps; finding-led title; source footnote; render and inspect before delivery. |
+| Trend, seasonality, baseline, anomaly, or "when did this start" | `modules/time-series-analysis/overview.md`; `scripts/time-series-analysis/baseline.py` | Pick and name the comparison window; never default to adjacent-day comparison; separate a spike from a level shift. |
+| Critique a UI screenshot/mockup, or review interface copy | `modules/ui-design-critique/overview.md` (+ `references/apple-design.md`, `references/apple-copywriting.md`) | Short, principle-named critique by default; depth is opt-in; quote the weak string and rewrite it. |
+| Create, edit, evaluate or optimize a skill | `modules/skill-creator/overview.md` (+ `references/best-practices.md`, `references/schemas.md`); `scripts/skill-creator/quick_validate.py` | Draft, run test cases, grade, iterate; keep SKILL.md lean and the description pushy; validate the frontmatter. |
 
 For blended requests, use a short pipeline (for example: schema discovery → data exploration → planning → query → descriptive summary/validation → dashboard or deck → deliverable). Do not treat the names above as proof that an external connector or format-conversion tool is available.
 

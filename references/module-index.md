@@ -29,6 +29,10 @@ Amigo is one installable master skill. Exactly one `SKILL.md` is the active mani
 | `file-triage-taxonomy.zip` | `modules/file-organizer/overview.md` + `references/taxonomy.md` | File classification, naming convention, duplicate detection and output contract |
 | `mixpanel-product-data-analyst-builder.zip` | `modules/mixpanel-product-data-analyst-builder/overview.md` | Build interview for a Mixpanel product data analyst clone; scope, bind, crawl, probe |
 | `presentation-agent-builder.zip` | `modules/presentation-agent-builder/overview.md` | Build interview for a presentation agent; one brand choice, method stays fixed |
+| `visualization.zip` | `modules/visualization/overview.md` + `references/chart-grammar.md` and `references/artifact-quality.md`; `scripts/visualization/chart.py` | Chart selection/construction, integrity rules and the artifact-quality gate |
+| `time-series-analysis.zip` | `modules/time-series-analysis/overview.md`; `scripts/time-series-analysis/baseline.py` | Baseline selection, WoW and weekday means, anomaly flags, change points |
+| `ui-design-critique.zip` | `modules/ui-design-critique/overview.md` + `references/apple-design.md` and `references/apple-copywriting.md` | Apple-HIG and UX-writing critique of UI screenshots; short by default, depth opt-in |
+| `skill-creator.zip` | `modules/skill-creator/overview.md` + `references/best-practices.md` and `references/schemas.md`; `scripts/skill-creator/` | Author, evaluate and optimize skills; skill frontmatter validation helper |
 
 ## Integration and safety notes
 

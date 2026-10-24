@@ -29,7 +29,14 @@
 - **W3C, WCAG 2 overview / Quick Reference:** https://www.w3.org/WAI/standards-guidelines/wcag/ and https://www.w3.org/WAI/WCAG22/quickref/ — used for contrast, keyboard interaction and not relying on color alone. Applicable tests depend on the actual artifact and available inspection tools.
 - **Microsoft PowerPoint accessibility guidance:** https://support.microsoft.com/en-us/accessibility/powerpoint/make-your-powerpoint-presentations-accessible-to-people-with-disabilities — recommends meaningful slide titles, logical reading order, alt text, adequate contrast and accessibility checks.
 - **Apple Human Interface Guidelines — Accessibility:** https://developer.apple.com/design/human-interface-guidelines/accessibility — used as a platform reference only for Apple-platform reviews, not as universal law for every interface.
+- **Apple HIG design principles and WWDC "Writing for interfaces":** https://developer.apple.com/design/human-interface-guidelines and .../design-principles — Clarity/Deference/Depth and the PACE copy framework; distilled into the ui-design-critique module. Also Rene Wang, "Wording in Interfaces": https://rene.wang/essay/wording-in-interfaces.
 - **OWASP GenAI Security Project, LLM Top 10 2026:** https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/ — used to strengthen awareness of prompt-injection and unsafe agent/tool behavior.
+
+## Changes applied in revision 1.3.0
+
+1. Merged four packs (visualization, time-series-analysis, ui-design-critique, skill-creator) and rebranded the visualization pack to Amigo.
+2. Added a GitHub Actions CI workflow that validates the package, compiles every script and smoke-tests the offline helpers on push/PR.
+3. Cross-linked ui-design-critique with the existing design-critique-creator rather than duplicating the reviewer setup.
 
 ## Changes applied in revision 1.2.0
 

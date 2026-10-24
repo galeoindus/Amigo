@@ -1,5 +1,14 @@
 # Amigo Changelog
 
+## 1.3.0 — 2026-10-25
+
+- Merged four more packs (29 source packs total): visualization, time-series-analysis, ui-design-critique, and skill-creator.
+- Rebranded the visualization pack's color grammar, palette and presentation references to Amigo; renamed its `Panja runtime` heading to `Amigo runtime` (matching the package convention).
+- Added a GitHub Actions workflow (`.github/workflows/ci.yml`) that runs the package validator, a compile check of every bundled script, and smoke tests of the offline helpers on push and pull request to `main`.
+- `skill-creator` keeps its platform references (the host agent and its builder tools); the package's tool-reality rule still applies, so tool names must be verified against the live environment.
+- Cross-linked `ui-design-critique` (the critique method) with `design-critique-creator` (the reviewer setup) instead of duplicating them.
+- Updated the router, module index and validation notes; one active root manifest remains.
+
 ## 1.2.0 — 2026-10-25
 
 - Merged ten additional packs (25 source packs total): metric reasoning, root-cause analysis, segmentation drilldown, statistical inference, product analytics, pptx-master, file organizer (builder + triage taxonomy), Mixpanel product data analyst builder, and presentation agent builder.
