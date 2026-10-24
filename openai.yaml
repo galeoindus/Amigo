@@ -1,0 +1,4 @@
+interface:
+  display_name: "Amigo"
+  short_description: "Unified companion, study, analytics, design, and reporting skill"
+  default_prompt: "Use Amigo to understand my goal, select the right workflow, verify important details, and deliver a complete, well-checked result."

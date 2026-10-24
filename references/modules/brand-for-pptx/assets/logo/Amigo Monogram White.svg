@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+<defs><linearGradient id="amigoGradient" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E6651B"/><stop offset="1" stop-color="#3333CC"/></linearGradient></defs>
+<rect x="1" y="1" width="126" height="126" rx="32" fill="url(#amigoGradient)"/>
+<g transform="translate(17,22) scale(1.05)"><g transform="translate(8,8)">
+<path d="M14 12 C14 5 21 0 31 0 H63 C73 0 80 7 80 17 V39 C80 49 73 56 63 56 H45 L30 68 V56 H31 C21 56 14 49 14 39 Z" fill="#FFFFFF"/>
+<path d="M0 32 C0 25 6 20 14 20 H42 C50 20 56 26 56 34 V54 C56 62 50 68 42 68 H28 L15 78 V68 C6 68 0 62 0 54 Z" fill="#FFFFFF" opacity="0.97"/>
+<circle cx="19" cy="44" r="2.8" fill="#4F46E5"/><circle cx="29" cy="44" r="2.8" fill="#4F46E5"/><circle cx="39" cy="44" r="2.8" fill="#4F46E5"/>
+</g></g>
+</svg>

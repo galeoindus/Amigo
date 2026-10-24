@@ -1,0 +1,17 @@
+Amigo package validation summary (2026-10-25)
+
+Checks included in scripts/validate_package.py:
+- Exactly one active SKILL.md manifest at package root
+- Legacy brand spellings searched in paths and human-readable text/source files
+- Required Amigo presentation assets present
+- Root metadata and Python syntax
+- Relative Markdown links scanned (schematic examples may be reported as warnings)
+
+Additional smoke tests in this build:
+- Python files compile successfully
+- Data profiler tested against absent fields, nulls, numeric strings and ISO timestamps
+- Descriptive stats helper tested against missing/invalid values and a potential outlier
+- Schema crawl planner emits parseable JSON for the Mixpanel example
+- ZIP integrity and manifest count verified
+
+Limitations: no live connector/API, GitHub repository, Metabase instance, Figma file or PowerPoint renderer was accessed. Package QA is not proof of end-to-end integration.
